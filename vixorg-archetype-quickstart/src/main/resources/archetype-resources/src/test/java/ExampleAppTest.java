@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.stream.Stream;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -35,9 +36,18 @@ class ExampleAppTest {
 	void tearDown() throws Exception {
 	}
 
+	@DisplayName("Should check java version to be 10+")
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void shouldCheckJavaVersion() {
+		String javaVersion = System.getProperty("java.version", "9.0.0");
+		assertNotNull(javaVersion);
+		assertTrue(javaVersion.length() > 0);
+		String[] javaVersionsArray = StringUtils.split(javaVersion, ".");
+		assertTrue(javaVersionsArray.length > 0);
+		String javaMajorVersion = javaVersionsArray[0];
+		assertNotNull(javaMajorVersion);
+		assertTrue(javaMajorVersion.length() > 0);
+		assertTrue(Long.parseLong(javaMajorVersion) >= 10L);
 	}
 
 	@DisplayName("Should return the sum of two numbers")
