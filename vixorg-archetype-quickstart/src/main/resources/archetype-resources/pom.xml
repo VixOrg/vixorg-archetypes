@@ -1,32 +1,35 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>${groupId}</groupId>
-    <artifactId>${artifactId}</artifactId>
-    <version>${version}</version>
-	
+	<artifactId>${artifactId}</artifactId>
+	<version>${version}</version>
+
 	<properties>
 		<project.build.sourceEncoding>${sourceEncoding}</project.build.sourceEncoding>
 		<maven.compiler.source>${javaVersion}</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		<minimum.maven.version>3.1.0</minimum.maven.version>
+		<minimum.java.version>10</minimum.java.version>
 
 		<!-- Dependency versions -->
 		<lombok.version>1.18.12</lombok.version>
 		<apache.commons.lang.version>3.11</apache.commons.lang.version>
-		<apache.commons.math.version>3.2</apache.commons.math.version>
-		<commons.io.version>2.7</commons.io.version>
+		<apache.commons.math.version>3.6.1</apache.commons.math.version>
+		<commons.io.version>2.8.0</commons.io.version>
 		<slf4j.version>1.7.30</slf4j.version>
 		<logback.version>1.2.3</logback.version>
-		<jackson.version>2.11.1</jackson.version>
-		<junit.jupiter.version>5.6.2</junit.jupiter.version>
-		<assertj.version>3.16.1</assertj.version>
+		<jackson.version>2.11.2</jackson.version>
+		<junit.jupiter.version>5.7.0</junit.jupiter.version>
+		<assertj.version>3.17.2</assertj.version>
 		<maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
 		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 		<maven-versions-plugin.version>2.8.1</maven-versions-plugin.version>
+		<maven-enforcer-plugin.version>3.0.0-M3</maven-enforcer-plugin.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -82,7 +85,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<resources>
 			<resource>
@@ -108,13 +111,37 @@
 					<reportFormat>plain</reportFormat>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>${maven-enforcer-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>${minimum.maven.version}</version>
+								</requireMavenVersion>
+								<requireJavaVersion>
+									<version>${minimum.java.version}</version>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
 	<reporting>
 		<plugins>
 			<plugin>
-				<!-- <MajorVersion [> . <MinorVersion [> . <IncrementalVersion ] ] [> - <BuildNumber | Qualifier ]> -->
+				<!-- <MajorVersion [> . <MinorVersion [> . <IncrementalVersion ] ] [> 
+					- <BuildNumber | Qualifier ]> -->
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<version>${maven-versions-plugin.version}</version>

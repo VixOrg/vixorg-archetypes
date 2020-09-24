@@ -13,5 +13,6 @@
 
 This project is for &lt;add your description here&gt;
 
-
+## Dependencies Version Management
+This project uses [versions-maven-plugin](https://www.mojohaus.org/versions-maven-plugin/usage.html) for dependencies versions management. Execute `$ mvn versions:display-property-updates` in order to see which plugins and dependencies can be upgraded 
 
