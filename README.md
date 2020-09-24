@@ -20,6 +20,7 @@ Follow these steps for creating a java maven project from a custom archetype:
 - Generate the project by executing
 ```
 $ mvn archetype:generate -DarchetypeCatalog=local \
+			 -DinteractiveMode=false \
 			 -DarchetypeGroupId=vixorg.archetypes \
 			 -DarchetypeArtifactId=vixorg-archetype-quickstart \
 			 -DarchetypeVersion=1.0.0 \
