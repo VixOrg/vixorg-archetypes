@@ -1,8 +1,8 @@
-## [Vixorg Archetypes Bundle](https://github.com/VixOrg/vixorg-archetypes)
-This repository contains a set of [Maven Archetypes](https://maven.apache.org/archetype/index.html), which can be used to create a java maven project with predefined folder structure and sample files.
+## [VixOrg Archetypes Bundle](https://github.com/VixOrg/vixorg-archetypes)
+This repository contains a set of [Maven Archetypes](https://maven.apache.org/archetype/index.html) for creating a java maven project with predefined folder structure and sample files.
 
 ### Archetypes
-- [vixorg-archetype-quickstart](https://github.com/VixOrg/vixorg-archetypes/blob/master/vixorg-archetype-quickstart/README.md)
+1. [vixorg-archetype-quickstart](https://github.com/VixOrg/vixorg-archetypes/tree/master/vixorg-archetype-quickstart)
 
 ### Installation
 The VixOrg Archetypes Bundle must be installed into an archetype catalog so that you can use them.

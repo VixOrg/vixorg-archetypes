@@ -42,7 +42,7 @@ class ExampleAppTest {
 
 	@DisplayName("Should return the sum of two numbers")
 	@ParameterizedTest(name = "{index} ==> ({0}) + ({1}) = {2}")
-	@MethodSource("vixorg.ExampleAppTest#summingTestArguments")
+	@MethodSource("${package}.ExampleAppTest#summingTestArguments")
 	public void shouldGetSum(int a, int b, int c) {
 		assertEquals(c, app.getSum(a, b));
 	}
