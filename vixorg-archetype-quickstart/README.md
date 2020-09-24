@@ -1,6 +1,6 @@
 ## Archetype [vixorg-archetype-quickstart](https://github.com/VixOrg/vixorg-archetypes/tree/master/vixorg-archetype-quickstart)
 This archetype is great for generating simple java maven projects with most commonly used dependencies.
-The generated project will contain an example application class (with `public static Main(String... args)` method) and an example <a href="#" onclick="window.open'https://junit.org/junit5/';return false;">JUnit 5</a> test case. It will also have the logging configured (using <a href="#" onclick="window.open'http://logback.qos.ch/';return false;">logback</a> and <a href="#" onclick="window.open'http://www.slf4j.org/';return false;">slf4j</a>) and a sample code for reading and initializing the `application.properties`.
+The generated project will contain an example application class (with `public static Main(String... args)` method) and an example <a href="#" onclick="window.open('https://junit.org/junit5/');return false;">JUnit 5</a> test case. It will also have the logging configured (using <a href="#" onclick="window.open('http://logback.qos.ch/');return false;">logback</a> and <a href="#" onclick="window.open('http://www.slf4j.org/');return false;">slf4j</a>) and a sample code for reading and initializing the `application.properties`.
 
 ### Usage
 VixOrg Archetypes Bundle installation and usage is described [here](https://github.com/VixOrg/vixorg-archetypes/blob/master/README.md#installation)
