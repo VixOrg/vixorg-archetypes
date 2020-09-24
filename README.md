@@ -1,13 +1,13 @@
 ## [Vixorg Archetypes Bundle](https://github.com/VixOrg/vixorg-archetypes)
-This repository contains a set of [Maven Archetypes](https://maven.apache.org/archetype/index.html), which can be used to create a java maven project with predefined folder structure and sample files.
+This repository contains a set of <a href="https://maven.apache.org/archetype/index.html" target="_blank">Maven Archetypes</a>, which can be used to create a java maven project with predefined folder structure and sample files.
 
 ### Archetypes
-- [vixorg-archetype-quickstart](https://github.com/VixOrg/vixorg-archetypes/vixorg-archetype-quickstart/README.md)
+- [vixorg-archetype-quickstart](https://github.com/VixOrg/vixorg-archetypes/blob/master/vixorg-archetype-quickstart/README.md)
 
 ### Installation
 The VixOrg Archetypes Bundle must be installed into an archetype catalog so that you can use them.
 Here are the steps for installing them to your local maven archetype catalog using command line:
-- Verify you have Maven installed by using `$ mvn -version`. (If it is installed, the version will be printed, otherwise follow the [instructions to download and install it](https://maven.apache.org/install.html))
+- Verify you have Maven installed by using `$ mvn -version`. (If it is installed, the version will be printed, otherwise follow the <a href="https://maven.apache.org/install.html)" target="_blank">instructions to download and install it</a>
 - Go to the directory where you want to checkout the archetypes bundle project `$ cd /some/path`
 - Clone the GitHub repository `$ git clone https://github.com/VixOrg/vixorg-archetypes.git`
 - Go into to the project root directory `$ cd vixorg-archetypes`
