@@ -48,3 +48,7 @@ sample-project
 | author | N | Author's name used in README.md of the project generated from archetype | Victor&nbsp;Nedioglo&nbsp;(@VixOrg)
 | javaVersion | N | Java version used by the maven compiler plugin | 14 |
 | sourceEncoding | N | Source files encoding | UTF-8 |
+| dotGitIgnoreFile | N | .gitignore file name (used for the workaround for the issue of .gitignore not being copied in target project) | .gitignore |
+
+### Additional Notes
+Comment out `<scope>test</scope>` in JUnit and AssertJ dependencies in the pom.xml for being able to have the code and the unitTest in the same class file (useful when doing small exercises or prototyping).

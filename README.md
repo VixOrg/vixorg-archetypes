@@ -12,7 +12,7 @@ Here are the steps for installing them to your local maven archetype catalog usi
 - Clone the GitHub repository `$ git clone https://github.com/VixOrg/vixorg-archetypes.git`
 - Go into to the project root directory `$ cd vixorg-archetypes`
 - Compile and install the archetypes to your local archetype catalog `$ mvn clean install`
-- Verify the installation `$ cat ~/.m2/repository/archetype-catalog.xml | grep vixorg`. This should print the groupId and atrtifactId of all archeotypes available in your local catalog
+- Verify the installation `$ cat ~/.m2/repository/archetype-catalog.xml | grep vixorg` This should print the groupId and atrtifactId of all archeotypes available in your local catalog
 
 ### Usage
 Follow these steps for creating a java maven project from a custom archetype:
