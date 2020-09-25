@@ -7,12 +7,12 @@
 #set( $archetypeVersion = $getPropertyMethod.invoke(null, "archetypeVersion") )
 # ${artifactId}
 
-**Generated from:** *[${archetypeGroupId}:${archetypeArtifactId}:v${archetypeVersion}](https://github.com/VixOrg/vixorg-archetypes/${archetypeArtifactId})*<br/>
+**Generated from:** *[${archetypeGroupId}:${archetypeArtifactId}:v${archetypeVersion}](https://github.com/VixOrg/vixorg-archetypes/tree/master/${archetypeArtifactId})*<br/>
 **Generated on:** *${date}*<br/>
 **Author:** *${author}*<br/>
 
 This project is for &lt;add your description here&gt;
 
 ## Dependencies Version Management
-This project uses [versions-maven-plugin](https://www.mojohaus.org/versions-maven-plugin/usage.html) for dependencies versions management. Execute `$ mvn versions:display-property-updates` in order to see which plugins and dependencies can be upgraded 
+This project uses [versions-maven-plugin](https://www.mojohaus.org/versions-maven-plugin/usage.html) for dependencies versions management. Execute `$ mvn versions:display-property-updates` for checking which plugins and dependencies can be upgraded.
 

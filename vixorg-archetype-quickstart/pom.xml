@@ -1,19 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>vixorg.archetypes</groupId>
 	<artifactId>vixorg-archetype-quickstart</artifactId>
 	<version>1.0.0</version>
 	<name>Quick Start Archetype</name>
-	<url>https://github.com/VixOrg/vixorg-archetypes/vixorg-archetype-quickstart</url>
+	<url>https://github.com/VixOrg/vixorg-archetypes/tree/master/vixorg-archetype-quickstart</url>
 	<packaging>maven-archetype</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>14</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+		
+		<archetype.test.skip>true</archetype.test.skip>
 
 		<archetype-packaging.version>3.2.0</archetype-packaging.version>
 		<maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
@@ -27,6 +29,7 @@
 				<version>${archetype-packaging.version}</version>
 			</extension>
 		</extensions>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

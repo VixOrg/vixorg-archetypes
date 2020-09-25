@@ -11,64 +11,9 @@
 
 	<name>VixOrg Archetypes</name>
 	<description>Archetypes of Victor Nedioglo</description>
-	<url></url>
-
+	<url>https://github.com/VixOrg/vixorg-archetypes</url>
+	
 	<modules>
 		<module>vixorg-archetype-quickstart</module>
 	</modules>
-
-	<build>
-		<extensions>
-			<extension>
-				<groupId>org.apache.maven.archetype</groupId>
-				<artifactId>archetype-packaging</artifactId>
-				<version>3.2.0</version>
-			</extension>
-		</extensions>
-
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-			<resource>
-				<directory>src/main/resources-filtered</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
-
-		<filters>
-			<filter>../plugin-versions.properties</filter>
-		</filters>
-
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-archetype-plugin</artifactId>
-					<version>3.2.0</version>
-					<configuration>
-						<ignoreEOLStyle>true</ignoreEOLStyle>
-						<properties>
-							<https.protocols>${https.protocols}</https.protocols>
-						</properties>
-					</configuration>
-					<dependencies>
-						<dependency>
-							<groupId>org.codehaus.groovy</groupId>
-							<artifactId>groovy-xml</artifactId>
-							<version>2.4.16</version>
-						</dependency>
-					</dependencies>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-resources-plugin</artifactId>
-					<configuration>
-						<escapeString>\</escapeString>
-						<encoding>UTF-8</encoding>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
 </project>

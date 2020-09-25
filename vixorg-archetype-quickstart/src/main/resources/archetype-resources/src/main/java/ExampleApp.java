@@ -5,7 +5,6 @@
 package ${package};
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 import lombok.extern.slf4j.Slf4j;
