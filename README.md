@@ -31,6 +31,7 @@ $ mvn archetype:generate -DarchetypeCatalog=local \
 			 -DjavaVersion=13
 ```
 - Go into the generated project folder and verify the contents `$ cd sample-project`
+- Compile the newly generated project `$ mvn clean verify`
 - Import the maven project to your IDE
 
 ### Happy coding!
