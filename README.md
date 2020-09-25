@@ -18,9 +18,9 @@ Here are the steps for installing them to your local maven archetype catalog usi
 Follow these steps for creating a java maven project from a custom archetype:
 - Go to the directory where you want the new project to be created `$ cd /some/path`
 - Generate the project by executing
-```
-$ mvn archetype:generate -DarchetypeCatalog=local -DinteractiveMode=false -DarchetypeGroupId=vixorg.archetypes -DarchetypeArtifactId=vixorg-archetype-quickstart -DarchetypeVersion=1.0.0 -DgroupId=vixorg -DartifactId=sample-project -Dversion=1.0.0 -Dpackage=vixorg.playground -DjavaVersion=13
-```
+
+> $ mvn archetype:generate -DarchetypeCatalog=local -DinteractiveMode=false -DarchetypeGroupId=vixorg.archetypes -DarchetypeArtifactId=vixorg-archetype-quickstart -DarchetypeVersion=1.0.0 -DgroupId=vixorg -DartifactId=sample-project -Dversion=1.0.0 -Dpackage=vixorg.playground -DjavaVersion=13
+
 - Go into the generated project folder and verify the contents `$ cd sample-project`
 - Compile the newly generated project `$ mvn clean verify`
 - Import the maven project to your IDE
