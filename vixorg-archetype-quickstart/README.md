@@ -29,17 +29,18 @@ sample-project
 | Name | Artifact | Version |
 |-|-|-:|
 | [Java](https://jdk.java.net/14/) | OpenJDK | 14+ |
-| [Lombok](https://projectlombok.org/) | org.projectlombok : lombok | 1.18.12 |
+| [Lombok](https://projectlombok.org/) | org.projectlombok : lombok | 1.18.16 |
 | [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/) | org.apache.commons : commons-lang3 | 3.11 |
 | [Apache Commons Math](https://commons.apache.org/proper/commons-math/) | org.apache.commons : commons-math3 | 3.2 |
 | [Apache Commons IO](http://commons.apache.org/proper/commons-io/) | commons-io : commons-io | 2.7 |
-| [Slf4J](http://www.slf4j.org/) | org.slf4j : slf4j-api | 1.7.30 |
-| [Logback](http://logback.qos.ch/) | ch.qos.logback : logback-classic | 1.2.3 |
-| [FasterXML Jackson](https://github.com/FasterXML/jackson) | com.fasterxml.jackson.core : jackson-databind | 2.11.1 |
+| [Slf4J](http://www.slf4j.org/) | org.slf4j : slf4j-api | 2.0.0-alpha1 |
+| [Logback](http://logback.qos.ch/) | ch.qos.logback : logback-classic | 1.3.0-alpha5 |
+| [FasterXML Jackson](https://github.com/FasterXML/jackson) | com.fasterxml.jackson.core : jackson-databind | 2.12.0-rc2 |
 | [Junit 5](https://junit.org/junit5/) | org.junit.jupiter : junit-jupiter</br>org.junit.vintage : junit-vintage-engine | 5.6.2 |
-| [AssertJ](https://assertj.github.io/doc/) | org.assertj : assertj-core | 3.16.1 |
+| [AssertJ](https://assertj.github.io/doc/) | org.assertj : assertj-core | 3.18.1 |
 | [Maven Compiler Plugin](https://maven.apache.org/plugins/maven-compiler-plugin/) | org.apache.maven.plugins : maven-compiler-plugin | 3.8.1 |
-| [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) | org.apache.maven.plugins : maven-surefire-plugin | 2.22.2 |
+| [Maven Surefire Plugin](https://maven.apache.org/surefire/maven-surefire-plugin/) | org.apache.maven.plugins : maven-surefire-plugin | 3.0.0-M5 |
+| [Maven Enforcer Plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/) | org.apache.maven.plugins : maven-enforcer-plugin | 3.0.0-M3 |
 | [Versions Maven Plugin](https://www.mojohaus.org/versions-maven-plugin/) | org.codehaus.mojo : versions-maven-plugin | 2.8.1 |
 
 ### Custom Properties
